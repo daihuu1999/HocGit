@@ -12,6 +12,8 @@ a. Để tạo 1 nhánh mới:
     git branch <name_branch>
 b. Để chuyển đến nhánh đó:
     git checkout <name_branch>
+c. Ngoài ra có thể tạo nhánh mới và chuyển sang nhánh đó bằng câu lệnh:
+    checkout -b " tên nhánh mới "
 
     5. Cập nhập thay đổi:
 a. Cập nhập thay đổi tất cả:
@@ -21,3 +23,16 @@ b. Cập nhập thay đổi cho từng file:
 
     SAU CÂU LỆNH ADD TA DÙNG CÂU LỆNH COMMIT ĐỂ GHI NOTE LẠI NHỮNG THAY ĐỔI
 git commit -m "text"
+
+    6. Update và merge branch hiện tại với một remote repo:
+cd repo/
+git pull origin master
+
+    7. Đổi tên / di chuyển / xóa files
+git rm " tên file " tmp/crap.txt  // đổi tên
+git mv file " tên file "          // xóa file
+
+    8. xóa branch:
+git branch -d " tên nhánh "
+
+
